@@ -1,84 +1,96 @@
-# Personal site
+# robertpierson.github.io
 
-Three files. No build step, no dependencies, no framework. Open `index.html`
-in a browser and it works.
+Portfolio and record. Three files, no framework, no dependencies, no build step.
 
 ```
-index.html   all the content
-styles.css   all the design
-main.js      the ink/paper theme toggle, and nothing else
+index.html   structure and all content
+styles.css   the whole design system
+main.js      stock toggle, rail scroll position, record filter
 ```
 
-## Make it yours
+Live at **https://robertpierson.github.io**. Pushing to `main` deploys it.
 
-Search `index.html` for `[EDIT]`. Every spot that needs your details is marked.
-In priority order:
+## Adding to the record
 
-1. **`<title>` and `<meta name="description">`** — this is what Google and
-   link previews show. Write it for a stranger, not for you.
-2. **The thesis line in the hero** — one honest sentence: what you do, and what
-   you want next. If it could be on anyone's site, rewrite it.
-3. **The Now block** — three specific, dated lines. Update it when it changes;
-   a stale Now block is worse than no Now block. Bump the date in the eyebrow
-   at the same time.
-4. **Selected work** — duplicate a `<li class="work-item">` per project. Lead
-   with what it does and one real number. Four projects is plenty.
-5. **Also shipped** — the smaller public repos. If you start writing, the same
-   list works for posts: swap the links and rename the heading.
-6. **About + facts list** — your links, your availability.
-7. **`<link rel="canonical">` and the `og:url` metas** — your real domain.
-8. **The JSON-LD block** — name, url, `sameAs` profile links.
+The Record section is one index of research, certifications, honors, and
+leadership. Copy this block into the `<ul class="record">` in `index.html` and
+set `data-type` to one of `research`, `certification`, `honor`, or `leadership`:
+
+```html
+<li class="entry" data-type="certification">
+  <span class="entry-date">Mar 2026</span>
+  <div class="entry-body">
+    <h3 class="entry-title">AWS Certified Cloud Practitioner</h3>
+    <p class="entry-issuer">Amazon Web Services</p>
+    <p class="entry-detail">Credential ID ABC123. Cloud architecture, security, and billing models.</p>
+  </div>
+  <span class="entry-type">Certification</span>
+</li>
+```
+
+The filter buttons build themselves from whatever types are actually present,
+so a category never shows up until there's something in it, and the bar stays
+hidden entirely while there's only one type. Nothing to wire up — add the entry
+and the filter appears.
+
+Keep entries newest-first. `entry-detail` is optional; drop the tag if there's
+nothing worth adding.
+
+## Everything else worth editing
+
+All in `index.html`, top to bottom:
+
+- **`<title>` and `<meta name="description">`** — what Google and link previews show.
+- **Hero** — the kicker date, the one-paragraph positioning line, and the four
+  vitals (status, focus, shipped, contact). Update the date when you update the page.
+- **Focus** — three cards: building, learning, looking for. Keep them specific;
+  vague entries are worse than no section.
+- **Ventures** — one `<li class="venture">` per product. Each has an index, a
+  year, a role, a description, up to three outcome bullets, and chips.
+- **Capabilities** — four groups. Only list things you've shipped with.
+- **About** — the lede plus three paragraphs, and the at-a-glance figures.
+- **JSON-LD block in `<head>`** — name, url, job title, `sameAs` links.
 
 ## Run it locally
 
 ```bash
-npx --yes serve .
+python -m http.server 4321
 ```
 
-Any static server works. So does double-clicking `index.html`.
+Then open http://localhost:4321.
 
-## Put it online
+## Design
 
-Drag the folder onto [app.netlify.com/drop](https://app.netlify.com/drop) — it
-is live in about ten seconds, no account required to start.
+Institutional rather than decorative. A persistent index rail on the left tracks
+where you are in the document; on narrow screens it collapses to a sticky header.
+Green is used only where it carries meaning — active state, section labels,
+links, the numbering — never as decoration.
 
-Or, for a permanent home on GitHub Pages:
+- **Stock and ink** — cream `#F7F4ED`, deep forest `#0F2419` for text, green
+  `#1A6B42` for anything green that has to be read, `#23935B` for rules and
+  marks, white `#FFFFFF` for panels. A forest variant inverts onto `#0B1F15`.
+  All of it is in the `:root` block of `styles.css`.
+- **Type** — Fraunces for display, Archivo for text, your system monospace for
+  dates, labels, and figures.
+- **The one flourish** — the name in the hero prints as two ink passes slightly
+  out of register, and pulls into register on load. That's the only decoration
+  on the page.
+- **Motion** — the register animation and scroll reveals via native CSS
+  `animation-timeline`. All of it is off under `prefers-reduced-motion`.
+- **Print** — `Ctrl/Cmd+P` gives a clean one-page record: rail, filters, and
+  buttons drop out, and hidden entries are forced visible so a filtered view
+  still prints in full.
 
-```bash
-git init && git add -A && git commit -m "Personal site"
-```
+## Verified
 
-Push to a repo named `<yourusername>.github.io`, then turn on Pages in the
-repo settings. Cloudflare Pages and Vercel also take this folder as-is.
-
-## Design notes
-
-The concept is a two-colour press: green ink on cream stock, laid down in
-separate passes that never line up perfectly. That misregistration is the
-signature — the name in the hero is printed twice, offset, and pulls into
-register on load. Project titles drift back out of register on hover. White is
-the third element: the panels and cards the ink sits on top of.
-
-- **Stock and inks** — cream `#F4EFE4`, deep forest `#10281B` for text, riso
-  green `#1E9A5C` for the offset layer and rules, `#15693F` for green that has
-  to work as small text, white `#FFFFFF` for panels. Swap them in the `:root`
-  block of `styles.css`; both themes are defined there and everything else
-  follows.
-- **Type** — Bricolage Grotesque for display, Newsreader for body, your system
-  monospace for labels and data.
-- **Grain** — a generated SVG noise layer, not an image. Costs one element.
-- **Motion** — the load sequence, hover misregistration, and scroll reveals via
-  native CSS `animation-timeline`. All of it is off under
-  `prefers-reduced-motion`.
-- **Registration marks** (⊕) label each section. Printers use them to line the
-  ink passes up, which is the only reason they are there.
+Both stocks pass WCAG AA on every text pair (cream floor 4.61:1, forest 4.54:1).
+No horizontal overflow from 375px up. Heading order is h1 → h2 → h3 throughout.
+Tap targets clear 24px.
 
 ## Ceilings, deliberately
 
-- Content lives in HTML. Past roughly a dozen projects or posts you want a
-  static site generator — not before.
-- No sitemap or RSS. One page doesn't need a sitemap; add RSS when you have a
-  real blog and it lives on its own pages.
-- Two web fonts load from Google. To go fully self-hosted, download the woff2
-  files, drop them next to `index.html`, and swap the `<link>` for
-  `@font-face` rules.
+- Content lives in HTML. Past roughly 30 record entries or a dozen ventures,
+  move to a static site generator — not before.
+- No sitemap or RSS. One page doesn't need a sitemap.
+- Two fonts load from Google. To self-host, download the woff2 files, drop them
+  beside `index.html`, and swap the `<link>` for `@font-face` rules.
