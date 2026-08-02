@@ -4,36 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ══ EDIT ME ═══════════════════════════════════════════════════════════
-     Everything you need to personalise lives in this file.
-     Search for  [EDIT]  to find each spot. See README.md for a checklist.
-     ═════════════════════════════════════════════════════════════════════ -->
-
-<title>Robert Pierson — full-stack developer, building and running small software products</title><!-- [EDIT] -->
-<meta name="description" content="I build software products end to end: the full-stack code, and the operations around it. Currently building ReEnvision, AI literacy for students who aren't taught it in school."><!-- [EDIT] -->
+<title>Robert Pierson — founder and full-stack developer</title>
+<meta name="description" content="Robert Pierson is a high school senior who builds and runs software products end to end. Founder of ReEnvision, an AI literacy program for students whose schools don't teach it.">
 <meta name="author" content="Robert Pierson">
-<link rel="canonical" href="https://robertpierson.github.io/"><!-- [EDIT] swap if you buy a domain -->
+<link rel="canonical" href="https://robertpierson.github.io/">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Robert Pierson">
-<meta property="og:description" content="Full-stack developer who builds software products end to end — the code and the business around it. Three shipped so far.">
-<meta property="og:url" content="https://robertpierson.github.io/"><!-- [EDIT] -->
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Robert Pierson — founder and full-stack developer">
+<meta property="og:description" content="High school senior. Builds and runs software products end to end. Founder of ReEnvision, an AI literacy program for students whose schools don't teach it.">
+<meta property="og:url" content="https://robertpierson.github.io/">
+<meta name="twitter:card" content="summary">
 
-<meta name="theme-color" content="#F4EFE4">
+<meta name="theme-color" content="#F7F4ED">
 
-<!-- Resolve the stock (cream/forest) before first paint so nothing flashes. -->
 <script>
   document.documentElement.dataset.theme =
-    localStorage.getItem("press") ||
+    localStorage.getItem("stock") ||
     (matchMedia("(prefers-color-scheme: dark)").matches ? "forest" : "cream");
 </script>
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F4EFE4'/%3E%3Cg stroke='%2315693F' stroke-width='2.2' fill='none'%3E%3Ccircle cx='16' cy='16' r='7'/%3E%3Cpath d='M16 3v26M3 16h26'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7F4ED'/%3E%3Cpath d='M8 24V8h7.5a4.5 4.5 0 0 1 0 9H12l6 7' stroke='%231A6B42' stroke-width='2.6' fill='none' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Newsreader:opsz,wght@6..72,300..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap">
 <link rel="stylesheet" href="styles.css">
 
 <script type="application/ld+json">
@@ -43,7 +37,7 @@
   "name": "Robert Pierson",
   "url": "https://robertpierson.github.io/",
   "email": "mailto:robertpierson196@gmail.com",
-  "jobTitle": "Full-stack developer",
+  "jobTitle": "Founder and full-stack developer",
   "sameAs": ["https://github.com/robertpierson"]
 }
 </script>
@@ -51,189 +45,330 @@
 
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<!-- paper grain: one fixed overlay, no images -->
 <div class="grain" aria-hidden="true"></div>
 
-<header class="bar">
-  <a class="bar-mark" href="#top" aria-label="Back to top">
-    <svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>
-    <span>Robert&nbsp;Pierson</span>
-  </a>
-  <nav class="bar-nav" aria-label="Sections">
-    <a href="#now">Now</a>
-    <a href="#work">Work</a>
-    <a href="#more">More</a>
-    <a href="#about">About</a>
-  </nav>
-  <button class="ink-toggle" type="button" data-theme-toggle aria-pressed="false">
-    <span class="ink-toggle-dot" aria-hidden="true"></span>
-    <span class="ink-toggle-label">Forest</span>
-  </button>
-</header>
+<div class="shell">
 
-<main id="main">
-
-  <!-- ─────────────────────────── HERO ─────────────────────────── -->
-  <section class="hero" id="top">
-    <p class="eyebrow">
-      <span class="eyebrow-rule" aria-hidden="true"></span>
-      Issue 01 · Updated 1 August 2026<!-- [EDIT] bump when you change the page -->
-    </p>
-
-    <h1 class="name">
-      <span class="reg" data-text="Robert">Robert</span>
-      <span class="reg" data-text="Pierson">Pierson</span>
-    </h1>
-
-    <p class="thesis">
-      I build software products end to end — the full stack, plus the pricing,
-      the operations and the support inbox. Three shipped so far. Looking for
-      the one worth doing full time.<!-- [EDIT] one honest sentence: what you do, and what you want next. -->
-    </p>
-
-    <p class="hero-actions">
-      <a class="button button-solid" href="mailto:robertpierson196@gmail.com">Start a conversation</a>
-      <a class="button" href="#work">See the work</a>
-    </p>
-  </section>
-
-  <!-- ─────────────────────────── NOW ─────────────────────────── -->
-  <section class="band" id="now" aria-labelledby="now-h">
-    <h2 class="section-label" id="now-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>Now</h2>
-
-    <dl class="now-grid reveal">
-      <!-- [EDIT] Three lines, hand-updated. Vague entries kill the whole point. -->
-      <div class="now-item">
-        <dt class="now-key">Building</dt>
-        <dd class="now-val">ReEnvision — AI literacy for students who aren't taught it in school. 96 lessons, installable, works with no connection.</dd>
-      </div>
-      <div class="now-item">
-        <dt class="now-key">Stack</dt>
-        <dd class="now-val">TypeScript, React 19, TanStack Start, Cloudflare Workers, Supabase, Postgres. Whatever gets it in front of someone fastest.</dd>
-      </div>
-      <div class="now-item">
-        <dt class="now-key">Looking for</dt>
-        <dd class="now-val">A cofounder, or an early team where I'd own product and code. Also taking full-stack contract work.</dd>
-      </div>
-    </dl>
-  </section>
-
-  <!-- ─────────────────────────── WORK ─────────────────────────── -->
-  <section class="band" id="work" aria-labelledby="work-h">
-    <h2 class="section-label" id="work-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>What I've shipped</h2>
-
-    <ul class="work-list">
-      <!-- [EDIT] Duplicate an <li> per project. Three or four is plenty;
-           six is a portfolio nobody finishes. Lead with what it does. -->
-      <li class="work-item reveal">
-        <a class="work-link" href="https://github.com/robertpierson/reenvision-site">
-          <span class="work-year">2026</span>
-          <h3 class="work-title"><span class="reg reg-sm" data-text="ReEnvision">ReEnvision</span></h3>
-          <p class="work-what">AI literacy for students whose schools don't teach it. Four courses, 32 units, 96 lessons. I wrote the curriculum and built the app: it installs to a phone and keeps working with no connection, because the students who need it most are the ones without reliable wifi.</p>
-          <p class="work-meta"><span class="tag">Nonprofit</span><span class="tag">Curriculum and code</span><span class="tag">Offline-first PWA</span></p>
-        </a>
-      </li>
-
-      <li class="work-item reveal">
-        <a class="work-link" href="https://resume-bullets.higgsfield.app">
-          <span class="work-year">2026</span>
-          <h3 class="work-title"><span class="reg reg-sm" data-text="Resume Bullets">Resume Bullets</span></h3>
-          <p class="work-what">Paste in a resume, get back one page that reads like a person wrote it. I built it, priced it, and run it. The whole product is a Cloudflare Worker, and the service key never leaves Supabase because lead writes go through an Edge Function.</p>
-          <p class="work-meta"><span class="tag">Solo, shipped</span><span class="tag">React 19</span><span class="tag">TanStack Start</span><span class="tag">Cloudflare + Supabase</span></p>
-        </a>
-      </li>
-
-      <li class="work-item reveal">
-        <a class="work-link" href="https://github.com/robertpierson/jim">
-          <span class="work-year">2026</span>
-          <h3 class="work-title"><span class="reg reg-sm" data-text="Jim">Jim</span></h3>
-          <p class="work-what">Lift and body-metric tracking with a leaderboard for your friend group. Built on the bet that the honest reason anyone logs a set is so someone else sees it — the leaderboard is the product, the tracker is the excuse.</p>
-          <p class="work-meta"><span class="tag">Side project</span><span class="tag">Full-stack</span><span class="tag">Postgres</span></p>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ─────────────────────────── WRITING ─────────────────────────── -->
-  <section class="band" id="more" aria-labelledby="more-h">
-    <h2 class="section-label" id="more-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>Also shipped</h2>
-
-    <ul class="post-list reveal">
-      <!-- [EDIT] The smaller stuff. Volume is a signal too — but keep it public and real.
-           If you start writing, this same list works for posts: swap the links. -->
-      <li class="post"><a href="https://github.com/robertpierson/reenvision-app-curriculum-pages">
-        <span class="post-date">2026</span>
-        <span class="post-title">ReEnvision curriculum pages</span>
-        <span class="post-dek">96 lessons as self-contained HTML. No build step, so a teacher can open one file and it just works.</span>
-      </a></li>
-      <li class="post"><a href="https://github.com/robertpierson/Personal-PWA">
-        <span class="post-date">2026</span>
-        <span class="post-title">Personal PWA</span>
-        <span class="post-dek">A pocket dashboard for the things I check daily, installed to the home screen instead of a tab.</span>
-      </a></li>
-      <li class="post"><a href="https://github.com/robertpierson/click-speed-test">
-        <span class="post-date">2026</span>
-        <span class="post-title">Click speed test</span>
-        <span class="post-dek">Small, fast, and finished in an evening. Every portfolio needs one of these.</span>
-      </a></li>
-    </ul>
-  </section>
-
-  <!-- ─────────────────────────── ABOUT ─────────────────────────── -->
-  <section class="band" id="about" aria-labelledby="about-h">
-    <h2 class="section-label" id="about-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>About</h2>
-
-    <div class="about-grid">
-      <div class="about-prose reveal">
-        <!-- [EDIT] Two or three short paragraphs. Write like you'd explain it to a
-             friend. Replace anything below that isn't true of you — it's a shape to
-             fill, not a bio. -->
-        <p>I'm the technical one and the one who runs it. Full-stack means I write
-        the frontend, the API, and the schema — but the part I actually like is
-        everything after that: what to charge, who it's for, why the person who
-        signed up on Tuesday never came back.</p>
-
-        <p>My bias is toward fewer moving parts and shipping to a real person early.
-        A lot of what I build has no build step at all — open the file and it works
-        — because the things that survive are the ones anyone can pick up without a
-        manual. I'd rather have three finished products than ten repositories.</p>
-
-        <p>The one I care most about is ReEnvision. Turning 96 lessons into something
-        a teacher can actually run, on a phone, with no connection, turned out to be
-        the real work. The code was the cheap part. That's been true of every project
-        on this page, and it's most of why I want to do this full time.</p>
-      </div>
-
-      <dl class="about-facts reveal">
-        <!-- [EDIT] your links. A row that goes nowhere costs more trust than a
-             missing one, so these two are commented out until you have the URLs:
-
-        <dt>Elsewhere</dt><dd><a href="https://www.linkedin.com/in/YOUR-HANDLE" rel="me noopener">linkedin.com/in/YOUR-HANDLE</a></dd>
-        <dt>Résumé</dt><dd><a href="resume.pdf">One page, PDF</a></dd>
-        -->
-        <dt>Email</dt><dd><a href="mailto:robertpierson196@gmail.com">robertpierson196@gmail.com</a></dd>
-        <dt>Code</dt><dd><a href="https://github.com/robertpierson" rel="me noopener">github.com/robertpierson</a></dd>
-        <dt>Available</dt><dd>Cofounder, full-time, or contract</dd>
-      </dl>
-    </div>
-  </section>
-
-  <!-- ─────────────────────────── CONTACT ─────────────────────────── -->
-  <section class="contact" aria-labelledby="contact-h">
-    <h2 class="contact-h" id="contact-h">Say hello</h2>
-    <p class="contact-sub">Building something early, or need someone who'll own the whole stack? Tell me what you're working on. I answer everything within a day or two.</p>
-    <a class="contact-mail" href="mailto:robertpierson196@gmail.com">
-      <span class="reg reg-mail" data-text="robertpierson196@gmail.com">robertpierson196@gmail.com</span>
+  <!-- ── Persistent index rail ─────────────────────────────────────── -->
+  <aside class="rail">
+    <a class="rail-mark" href="#top">
+      <span class="rail-initials" aria-hidden="true">RP</span>
+      <span class="rail-name">Robert Pierson</span>
     </a>
-  </section>
 
-</main>
+    <nav class="rail-nav" aria-label="Contents">
+      <ol>
+        <li><a href="#focus" data-spy>Focus</a></li>
+        <li><a href="#ventures" data-spy>Ventures</a></li>
+        <li><a href="#record" data-spy>Record</a></li>
+        <li><a href="#capabilities" data-spy>Capabilities</a></li>
+        <li><a href="#about" data-spy>About</a></li>
+        <li><a href="#contact" data-spy>Contact</a></li>
+      </ol>
+    </nav>
 
-<footer class="colophon">
-  <p>Set in Bricolage Grotesque and Newsreader. A two-colour press: green ink on cream stock with white inserts, run slightly out of register on purpose.</p>
-  <p>Hand-written HTML. No trackers, no cookies, no build step. <span class="colophon-year">© 2026 Robert Pierson</span></p>
-</footer>
+    <button class="stock-toggle" type="button" data-theme-toggle aria-pressed="false">
+      <span class="stock-dot" aria-hidden="true"></span>
+      <span class="stock-label">Forest</span>
+    </button>
+  </aside>
+
+  <main id="main">
+
+    <!-- ── Hero ───────────────────────────────────────────────────── -->
+    <header class="hero" id="top">
+      <p class="kicker">Portfolio and record · Updated August 2026</p>
+
+      <h1 class="hero-name"><span class="reg" data-text="Robert Pierson">Robert Pierson</span></h1>
+
+      <p class="hero-line">
+        I build software products end to end and run the business around them.
+        Founder of <strong>ReEnvision</strong>, an AI literacy program for
+        students whose schools don't teach it — 96 lessons, built to work on a
+        phone with no connection.
+      </p>
+
+      <dl class="vitals">
+        <div class="vital">
+          <dt>Status</dt>
+          <dd>High school senior, class of 2027</dd>
+        </div>
+        <div class="vital">
+          <dt>Focus</dt>
+          <dd>Entrepreneurship and full-stack engineering</dd>
+        </div>
+        <div class="vital">
+          <dt>Shipped</dt>
+          <dd>3 products, 20+ public repositories</dd>
+        </div>
+        <div class="vital">
+          <dt>Contact</dt>
+          <dd><a href="mailto:robertpierson196@gmail.com">robertpierson196@gmail.com</a></dd>
+        </div>
+      </dl>
+
+      <p class="hero-actions">
+        <a class="btn btn-solid" href="#ventures">See the work</a>
+        <a class="btn" href="https://github.com/robertpierson" rel="noopener">GitHub</a>
+      </p>
+    </header>
+
+    <!-- ── Focus ──────────────────────────────────────────────────── -->
+    <section class="section" id="focus" aria-labelledby="focus-h">
+      <div class="section-head">
+        <h2 class="section-title" id="focus-h">Focus</h2>
+        <p class="section-note">What I'm working on and what I'm looking for.</p>
+      </div>
+
+      <div class="focus-grid">
+        <article class="card">
+          <h3 class="card-title">Building</h3>
+          <p>ReEnvision. Four courses, 32 units, 96 lessons of AI literacy,
+          delivered as an installable app that keeps working with no connection —
+          because the students who need it most are the ones without reliable
+          internet at home.</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Learning</h3>
+          <p>How small organizations actually run: pricing, operations, and the
+          gap between a product that works and a product someone comes back to.
+          Most of what I know here came from shipping and watching what broke.</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Looking for</h3>
+          <p>A university where I can keep building, and the people to build with.
+          Also open to internships and contract work where I'd own a product
+          end to end rather than one layer of it.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Ventures ───────────────────────────────────────────────── -->
+    <section class="section" id="ventures" aria-labelledby="ventures-h">
+      <div class="section-head">
+        <h2 class="section-title" id="ventures-h">Ventures</h2>
+        <p class="section-note">Products I built, shipped, and run. Not coursework.</p>
+      </div>
+
+      <ol class="ventures">
+        <li class="venture">
+          <div class="venture-meta">
+            <span class="venture-index">01</span>
+            <span class="venture-year">2026 — present</span>
+            <span class="venture-role">Founder</span>
+          </div>
+          <div class="venture-body">
+            <h3 class="venture-title">
+              <a href="https://github.com/robertpierson/reenvision-site" rel="noopener">ReEnvision</a>
+            </h3>
+            <p class="venture-what">A nonprofit AI literacy program for students
+            whose schools don't offer one. I wrote the curriculum and built the
+            software: four courses, 32 units, 96 lessons, published as
+            self-contained pages a teacher can open and run without installing
+            anything, and as an app that installs to a phone and works offline.</p>
+            <ul class="venture-points">
+              <li>Designed the full curriculum sequence, not just the platform</li>
+              <li>Built offline-first so students without home internet aren't cut out</li>
+              <li>Shipped with no build step, so any teacher can host or fork it</li>
+            </ul>
+            <p class="chips"><span class="chip">Nonprofit</span><span class="chip">Curriculum design</span><span class="chip">Progressive web app</span><span class="chip">Offline-first</span></p>
+          </div>
+        </li>
+
+        <li class="venture">
+          <div class="venture-meta">
+            <span class="venture-index">02</span>
+            <span class="venture-year">2026</span>
+            <span class="venture-role">Solo founder</span>
+          </div>
+          <div class="venture-body">
+            <h3 class="venture-title">
+              <a href="https://resume-bullets.higgsfield.app" rel="noopener">Resume Bullets</a>
+            </h3>
+            <p class="venture-what">A paid product that rewrites a resume into one
+            page that reads like a person wrote it. I built it, priced it, and run
+            it. The entire application is a Cloudflare Worker, and the database
+            service key never leaves Supabase because lead writes go through an
+            Edge Function rather than the client.</p>
+            <ul class="venture-points">
+              <li>Owned product, pricing, engineering, and support</li>
+              <li>Runs at the edge — no server to maintain, no cold starts to explain</li>
+              <li>Designed the credential boundary so a leaked client bundle exposes nothing</li>
+            </ul>
+            <p class="chips"><span class="chip">Solo venture</span><span class="chip">React 19</span><span class="chip">TanStack Start</span><span class="chip">Cloudflare Workers</span><span class="chip">Supabase</span></p>
+          </div>
+        </li>
+
+        <li class="venture">
+          <div class="venture-meta">
+            <span class="venture-index">03</span>
+            <span class="venture-year">2026</span>
+            <span class="venture-role">Builder</span>
+          </div>
+          <div class="venture-body">
+            <h3 class="venture-title">
+              <a href="https://github.com/robertpierson/jim" rel="noopener">Jim</a>
+            </h3>
+            <p class="venture-what">Lift and body-metric tracking with a leaderboard
+            for a friend group. Built on a specific bet about motivation: the honest
+            reason anyone logs a set is so someone else sees it. The leaderboard is
+            the product; the tracker is the excuse to open the app.</p>
+            <ul class="venture-points">
+              <li>Full-stack: schema, API, and interface</li>
+              <li>Product thesis first, features second</li>
+            </ul>
+            <p class="chips"><span class="chip">Full-stack</span><span class="chip">Postgres</span><span class="chip">Social mechanics</span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ── Record ─────────────────────────────────────────────────── -->
+    <section class="section" id="record" aria-labelledby="record-h">
+      <div class="section-head">
+        <h2 class="section-title" id="record-h">Record</h2>
+        <p class="section-note">Research, certifications, honors, and leadership in one index. Filter by type.</p>
+      </div>
+
+      <!-- Filters are built from the entry types actually present below, so a
+           category never appears until there's something in it. -->
+      <div class="filters" role="group" aria-label="Filter the record by type" data-filters hidden></div>
+
+      <ul class="record" data-record>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             Verified entries only. Send Robert's real certifications,
+             research, and honors and they get added here in the same shape.
+             The row below is the template — copy it, set data-type to one of:
+             research | certification | honor | leadership
+
+        <li class="entry" data-type="certification">
+          <span class="entry-date">Mar 2026</span>
+          <div class="entry-body">
+            <h3 class="entry-title">AWS Certified Cloud Practitioner</h3>
+            <p class="entry-issuer">Amazon Web Services</p>
+            <p class="entry-detail">Credential ID ABC123. Covers cloud architecture, security, and billing models.</p>
+          </div>
+          <span class="entry-type">Certification</span>
+        </li>
+             ═══════════════════════════════════════════════════════════════ -->
+
+        <li class="entry" data-type="leadership">
+          <span class="entry-date">2026 — present</span>
+          <div class="entry-body">
+            <h3 class="entry-title">Founder, ReEnvision</h3>
+            <p class="entry-issuer">Independent nonprofit program</p>
+            <p class="entry-detail">Founded and run an AI literacy program for students without access to one at school. Wrote a 96-lesson curriculum across four courses and built the platform that delivers it offline.</p>
+          </div>
+          <span class="entry-type">Leadership</span>
+        </li>
+
+        <li class="entry" data-type="leadership">
+          <span class="entry-date">2026</span>
+          <div class="entry-body">
+            <h3 class="entry-title">Founder, Resume Bullets</h3>
+            <p class="entry-issuer">Independent product</p>
+            <p class="entry-detail">Took a paid product from idea to live service alone — engineering, pricing, and support — running on edge infrastructure.</p>
+          </div>
+          <span class="entry-type">Leadership</span>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ── Capabilities ───────────────────────────────────────────── -->
+    <section class="section" id="capabilities" aria-labelledby="capabilities-h">
+      <div class="section-head">
+        <h2 class="section-title" id="capabilities-h">Capabilities</h2>
+        <p class="section-note">Tools I've shipped production work with, not tools I've read about.</p>
+      </div>
+
+      <div class="caps">
+        <div class="cap">
+          <h3 class="cap-title">Frontend</h3>
+          <p class="cap-list">TypeScript · React 19 · TanStack Start · Progressive web apps · Offline-first architecture · Semantic HTML and accessibility</p>
+        </div>
+        <div class="cap">
+          <h3 class="cap-title">Backend and data</h3>
+          <p class="cap-list">Postgres · Supabase · Edge Functions · REST API design · Authentication and credential boundaries</p>
+        </div>
+        <div class="cap">
+          <h3 class="cap-title">Infrastructure</h3>
+          <p class="cap-list">Cloudflare Workers · GitHub Pages and Actions · Static-first deployment · Git</p>
+        </div>
+        <div class="cap">
+          <h3 class="cap-title">Product and operations</h3>
+          <p class="cap-list">Pricing · Curriculum design · Customer support · Scoping a product down to what ships</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About ──────────────────────────────────────────────────── -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="section-head">
+        <h2 class="section-title" id="about-h">About</h2>
+      </div>
+
+      <div class="about">
+        <div class="about-prose">
+          <p class="lede">I'm a high school senior who builds software products
+          and runs them, which is a different job than writing code.</p>
+
+          <p>Full-stack means I write the interface, the API, and the schema. But
+          the part I keep coming back to is everything after that: what to charge,
+          who it's actually for, and why the person who signed up on Tuesday never
+          opened it again. Every project on this page taught me some version of
+          that lesson, usually the expensive way.</p>
+
+          <p>My bias is toward fewer moving parts and getting something in front
+          of a real person early. A lot of what I build has no build step at all —
+          you open the file and it works — because the things that survive are the
+          ones someone else can pick up without a manual. I'd rather have three
+          finished products than ten repositories.</p>
+
+          <p>ReEnvision is the one I care most about. Turning 96 lessons into
+          something a teacher can actually run, on a phone, with no connection,
+          turned out to be the real work; the code was the cheap part. That gap —
+          between a thing that technically functions and a thing people can use —
+          is most of what I want to keep studying, and most of why I want to
+          start companies.</p>
+        </div>
+
+        <aside class="about-side">
+          <h3 class="side-title">At a glance</h3>
+          <dl class="side-list">
+            <dt>Graduating</dt><dd>2027</dd>
+            <dt>Building since</dt><dd>2023</dd>
+            <dt>Products shipped</dt><dd>3</dd>
+            <dt>Public repositories</dt><dd>20+</dd>
+            <dt>Open to</dt><dd>Internships, contract work, cofounders</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ── Contact ────────────────────────────────────────────────── -->
+    <section class="section section-contact" id="contact" aria-labelledby="contact-h">
+      <div class="section-head">
+        <h2 class="section-title" id="contact-h">Contact</h2>
+      </div>
+
+      <p class="contact-line">Tell me what you're building, or what you're
+      admitting me to. I answer everything within a day or two.</p>
+
+      <p class="contact-links">
+        <a class="contact-primary" href="mailto:robertpierson196@gmail.com">robertpierson196@gmail.com</a>
+        <a class="contact-secondary" href="https://github.com/robertpierson" rel="me noopener">github.com/robertpierson</a>
+      </p>
+    </section>
+
+    <footer class="colophon">
+      <p>Set in Fraunces and Archivo. Hand-written HTML, no framework and no build step. No trackers and no cookies.</p>
+      <p>© 2026 Robert Pierson</p>
+    </footer>
+
+  </main>
+</div>
 
 <script src="main.js"></script>
 </body>
