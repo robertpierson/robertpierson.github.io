@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Robert Pierson — founder and full-stack developer</title>
-<meta name="description" content="Robert Pierson is a high school senior who builds and runs software products end to end. Founder of ReEnvision, an AI literacy program for students whose schools don't teach it.">
+<meta name="description" content="Robert Pierson is a high school senior who founded two nonprofits: ReEnvision, an AI literacy program for students whose schools don't teach it, and Big Things, which gives community-centric software the exposure it needs.">
 <meta name="author" content="Robert Pierson">
 <link rel="canonical" href="https://robertpierson.github.io/">
 
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Robert Pierson — founder and full-stack developer">
-<meta property="og:description" content="High school senior. Builds and runs software products end to end. Founder of ReEnvision, an AI literacy program for students whose schools don't teach it.">
+<meta property="og:description" content="High school senior. Founder of ReEnvision, an AI literacy program for students whose schools don't teach it, and Big Things, a nonprofit for community-centric software.">
 <meta property="og:url" content="https://robertpierson.github.io/">
 <meta name="twitter:card" content="summary">
 
@@ -82,10 +82,11 @@
       <h1 class="hero-name"><span class="reg" data-text="Robert Pierson">Robert Pierson</span></h1>
 
       <p class="hero-line">
-        I build software products end to end and run the business around them.
-        Founder of <strong>ReEnvision</strong>, an AI literacy program for
-        students whose schools don't teach it — 96 lessons, built to work on a
-        phone with no connection.
+        I build nonprofit software end to end and run the organizations around
+        it. Founder of <strong>ReEnvision</strong>, an AI literacy program for
+        students whose schools don't teach it, and of <strong>Big Things</strong>,
+        which gives community-centric software the exposure it doesn't get on
+        its own.
       </p>
 
       <dl class="vitals">
@@ -98,8 +99,8 @@
           <dd>Entrepreneurship and full-stack engineering</dd>
         </div>
         <div class="vital">
-          <dt>Shipped</dt>
-          <dd>3 products, 13 public repositories</dd>
+          <dt>Building</dt>
+          <dd>Two nonprofits: ReEnvision and Big Things</dd>
         </div>
         <div class="vital">
           <dt>Contact</dt>
@@ -130,14 +131,15 @@
         </article>
         <article class="card">
           <h3 class="card-title">Learning</h3>
-          <p>How small organizations actually run: pricing, operations, and the
-          gap between a product that works and a product someone comes back to.
-          Most of what I know here came from shipping and watching what broke.</p>
+          <p>How small organizations actually run: operations, volunteers, and
+          the gap between a project that works and a project someone comes back
+          to. Most of what I know here came from shipping and watching what
+          broke.</p>
         </article>
         <article class="card">
           <h3 class="card-title">Looking for</h3>
           <p>A university where I can keep building, and the people to build with.
-          Also open to internships and contract work where I'd own a product
+          Also open to internships and contract work where I'd own a project
           end to end rather than one layer of it.</p>
         </article>
       </div>
@@ -147,7 +149,7 @@
     <section class="section" id="ventures" aria-labelledby="ventures-h">
       <div class="section-head">
         <h2 class="section-title" id="ventures-h">Ventures</h2>
-        <p class="section-note">Products I built, shipped, and run. Not coursework.</p>
+        <p class="section-note">Organizations I founded, built, and run. Not coursework.</p>
       </div>
 
       <ol class="ventures">
@@ -159,7 +161,7 @@
           </div>
           <div class="venture-body">
             <h3 class="venture-title">
-              <a href="https://github.com/robertpierson/reenvision-site" rel="noopener">ReEnvision</a>
+              <a href="https://github.com/robertpierson/reenvision-app-curriculum-pages" rel="noopener">ReEnvision</a>
             </h3>
             <p class="venture-what">A nonprofit AI literacy program for students
             whose schools don't offer one. I wrote the curriculum and built the
@@ -178,46 +180,24 @@
         <li class="venture">
           <div class="venture-meta">
             <span class="venture-index">02</span>
-            <span class="venture-year">2026</span>
-            <span class="venture-role">Solo founder</span>
+            <span class="venture-year">2026 — present</span>
+            <span class="venture-role">Founder</span>
           </div>
           <div class="venture-body">
             <h3 class="venture-title">
-              <a href="https://resume-bullets.higgsfield.app" rel="noopener">Resume Bullets</a>
+              <a href="https://www.bigthingssoftware.org/" rel="noopener">Big Things</a>
             </h3>
-            <p class="venture-what">A paid product that rewrites a resume into one
-            page that reads like a person wrote it. I built it, priced it, and run
-            it. The entire application is a Cloudflare Worker, and the database
-            service key never leaves Supabase because lead writes go through an
-            Edge Function rather than the client.</p>
+            <p class="venture-what">A nonprofit that gives community-centric
+            software and app development the exposure and support it doesn't get
+            on its own. People bring a project, volunteer on one, or help amplify
+            it. I built and run the site it lives on.</p>
             <ul class="venture-points">
-              <li>Owned product, pricing, engineering, and support</li>
-              <li>Runs at the edge — no server to maintain, no cold starts to explain</li>
-              <li>Designed the credential boundary so a leaked client bundle exposes nothing</li>
+              <li>Three ways in — bring, volunteer, amplify — rather than one generic contact form</li>
+              <li>Hand-tuned loading: the hero image is preloaded at high priority because it's the largest paint</li>
+              <li>Works with JavaScript off — the scroll choreography is handed its resting state instead of disappearing</li>
+              <li>Full search surface: canonical tags, social cards, sitemap, and an installable web manifest</li>
             </ul>
-            <p class="chips"><span class="chip">Solo venture</span><span class="chip">React 19</span><span class="chip">TanStack Start</span><span class="chip">Cloudflare Workers</span><span class="chip">Supabase</span></p>
-          </div>
-        </li>
-
-        <li class="venture">
-          <div class="venture-meta">
-            <span class="venture-index">03</span>
-            <span class="venture-year">2026</span>
-            <span class="venture-role">Builder</span>
-          </div>
-          <div class="venture-body">
-            <h3 class="venture-title">
-              <a href="https://github.com/robertpierson/jim" rel="noopener">Jim</a>
-            </h3>
-            <p class="venture-what">Lift and body-metric tracking with a leaderboard
-            for a friend group. Built on a specific bet about motivation: the honest
-            reason anyone logs a set is so someone else sees it. The leaderboard is
-            the product; the tracker is the excuse to open the app.</p>
-            <ul class="venture-points">
-              <li>Full-stack: schema, API, and interface</li>
-              <li>Product thesis first, features second</li>
-            </ul>
-            <p class="chips"><span class="chip">Full-stack</span><span class="chip">Postgres</span><span class="chip">Social mechanics</span></p>
+            <p class="chips"><span class="chip">Nonprofit</span><span class="chip">Founder</span><span class="chip">Performance</span><span class="chip">Accessibility</span><span class="chip">SEO</span></p>
           </div>
         </li>
       </ol>
@@ -264,11 +244,11 @@
         </li>
 
         <li class="entry" data-type="leadership">
-          <span class="entry-date">2026</span>
+          <span class="entry-date">2026 — present</span>
           <div class="entry-body">
-            <h3 class="entry-title">Founder, Resume Bullets</h3>
-            <p class="entry-issuer">Independent product</p>
-            <p class="entry-detail">Took a paid product from idea to live service alone — engineering, pricing, and support — running on edge infrastructure.</p>
+            <h3 class="entry-title">Founder, Big Things</h3>
+            <p class="entry-issuer">Independent nonprofit</p>
+            <p class="entry-detail">Founded a nonprofit that gives community-centric software the exposure and support it doesn't get on its own, and built and run the site behind it.</p>
           </div>
           <span class="entry-type">Leadership</span>
         </li>
@@ -312,19 +292,19 @@
       <div class="caps">
         <div class="cap">
           <h3 class="cap-title">Frontend</h3>
-          <p class="cap-list">TypeScript · React 19 · TanStack Start · Progressive web apps · Offline-first architecture · Semantic HTML and accessibility</p>
+          <p class="cap-list">JavaScript and TypeScript · Semantic HTML and CSS · Progressive web apps · Offline-first architecture · Accessibility and no-JavaScript fallbacks</p>
         </div>
         <div class="cap">
-          <h3 class="cap-title">Backend and data</h3>
-          <p class="cap-list">Postgres · Supabase · Edge Functions · REST API design · Authentication and credential boundaries</p>
+          <h3 class="cap-title">Performance and search</h3>
+          <p class="cap-list">Largest-paint tuning · Image preloading and WebP · Canonical and social metadata · Sitemaps and robots · Web manifests</p>
         </div>
         <div class="cap">
           <h3 class="cap-title">Infrastructure</h3>
-          <p class="cap-list">Cloudflare Workers · GitHub Pages and Actions · Static-first deployment · Git</p>
+          <p class="cap-list">Vercel · GitHub Pages and Actions · Static-first deployment · Git</p>
         </div>
         <div class="cap">
-          <h3 class="cap-title">Product and operations</h3>
-          <p class="cap-list">Pricing · Curriculum design · Customer support · Scoping a product down to what ships</p>
+          <h3 class="cap-title">Program and operations</h3>
+          <p class="cap-list">Curriculum design · Nonprofit program operations · Volunteer intake · Scoping a project down to what ships</p>
         </div>
       </div>
     </section>
@@ -337,35 +317,37 @@
 
       <div class="about">
         <div class="about-prose">
-          <p class="lede">I'm a high school senior who builds software products
-          and runs them, which is a different job than writing code.</p>
+          <p class="lede">I'm a high school senior who builds software and runs
+          the organizations around it, which is a different job than writing
+          code.</p>
 
-          <p>Full-stack means I write the interface, the API, and the schema. But
-          the part I keep coming back to is everything after that: what to charge,
-          who it's actually for, and why the person who signed up on Tuesday never
-          opened it again. Every project on this page taught me some version of
-          that lesson, usually the expensive way.</p>
+          <p>Full-stack means I write the interface, the logic, and the data
+          layer. But the part I keep coming back to is everything after that: who
+          it's actually for, how someone finds it, and why the person who showed
+          up on Tuesday never came back. Both things I run taught me some version
+          of that, usually the expensive way.</p>
 
           <p>My bias is toward fewer moving parts and getting something in front
-          of a real person early. A lot of what I build has no build step at all —
+          of a real person early. Most of what I build has no build step at all —
           you open the file and it works — because the things that survive are the
-          ones someone else can pick up without a manual. I'd rather have three
-          finished products than ten repositories.</p>
+          ones someone else can pick up without a manual. I'd rather run two
+          organizations properly than ship ten repositories.</p>
 
           <p>ReEnvision is the one I care most about. Turning 96 lessons into
           something a teacher can actually run, on a phone, with no connection,
-          turned out to be the real work; the code was the cheap part. That gap —
-          between a thing that technically functions and a thing people can use —
-          is most of what I want to keep studying, and most of why I want to
-          start companies.</p>
+          turned out to be the real work; the code was the cheap part. Big Things
+          came out of the same observation one level up — good community software
+          mostly fails from never being seen, not from being badly built. That
+          gap, between a thing that works and a thing people actually reach, is
+          what I want to keep studying and why I want to start companies.</p>
         </div>
 
         <aside class="about-side">
           <h3 class="side-title">At a glance</h3>
           <dl class="side-list">
             <dt>Graduating</dt><dd>2027</dd>
-            <dt>Products shipped</dt><dd>3</dd>
-            <dt>Public repositories</dt><dd>13</dd>
+            <dt>Nonprofits founded</dt><dd>2</dd>
+            <dt>Lessons written</dt><dd>96</dd>
             <dt>Open to</dt><dd>Internships, contract work, cofounders</dd>
           </dl>
         </aside>
