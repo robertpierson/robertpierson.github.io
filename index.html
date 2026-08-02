@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" data-theme="cream">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ══ EDIT ME ═══════════════════════════════════════════════════════════
+     Everything you need to personalise lives in this file.
+     Search for  [EDIT]  to find each spot. See README.md for a checklist.
+     ═════════════════════════════════════════════════════════════════════ -->
+
+<title>Robert Pierson — full-stack developer, building and running small software products</title><!-- [EDIT] -->
+<meta name="description" content="I build software products end to end: the full-stack code, and the operations around it. Currently building ReEnvision, AI literacy for students who aren't taught it in school."><!-- [EDIT] -->
+<meta name="author" content="Robert Pierson">
+<link rel="canonical" href="https://robertpierson.github.io/"><!-- [EDIT] swap if you buy a domain -->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Robert Pierson">
+<meta property="og:description" content="Full-stack developer who builds software products end to end — the code and the business around it. Three shipped so far.">
+<meta property="og:url" content="https://robertpierson.github.io/"><!-- [EDIT] -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#F4EFE4">
+
+<!-- Resolve the stock (cream/forest) before first paint so nothing flashes. -->
+<script>
+  document.documentElement.dataset.theme =
+    localStorage.getItem("press") ||
+    (matchMedia("(prefers-color-scheme: dark)").matches ? "forest" : "cream");
+</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F4EFE4'/%3E%3Cg stroke='%2315693F' stroke-width='2.2' fill='none'%3E%3Ccircle cx='16' cy='16' r='7'/%3E%3Cpath d='M16 3v26M3 16h26'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Newsreader:opsz,wght@6..72,300..600&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Robert Pierson",
+  "url": "https://robertpierson.github.io/",
+  "email": "mailto:robertpierson196@gmail.com",
+  "jobTitle": "Full-stack developer",
+  "sameAs": ["https://github.com/robertpierson"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- paper grain: one fixed overlay, no images -->
+<div class="grain" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="bar-mark" href="#top" aria-label="Back to top">
+    <svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>
+    <span>Robert&nbsp;Pierson</span>
+  </a>
+  <nav class="bar-nav" aria-label="Sections">
+    <a href="#now">Now</a>
+    <a href="#work">Work</a>
+    <a href="#more">More</a>
+    <a href="#about">About</a>
+  </nav>
+  <button class="ink-toggle" type="button" data-theme-toggle aria-pressed="false">
+    <span class="ink-toggle-dot" aria-hidden="true"></span>
+    <span class="ink-toggle-label">Forest</span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ─────────────────────────── HERO ─────────────────────────── -->
+  <section class="hero" id="top">
+    <p class="eyebrow">
+      <span class="eyebrow-rule" aria-hidden="true"></span>
+      Issue 01 · Updated 1 August 2026<!-- [EDIT] bump when you change the page -->
+    </p>
+
+    <h1 class="name">
+      <span class="reg" data-text="Robert">Robert</span>
+      <span class="reg" data-text="Pierson">Pierson</span>
+    </h1>
+
+    <p class="thesis">
+      I build software products end to end — the full stack, plus the pricing,
+      the operations and the support inbox. Three shipped so far. Looking for
+      the one worth doing full time.<!-- [EDIT] one honest sentence: what you do, and what you want next. -->
+    </p>
+
+    <p class="hero-actions">
+      <a class="button button-solid" href="mailto:robertpierson196@gmail.com">Start a conversation</a>
+      <a class="button" href="#work">See the work</a>
+    </p>
+  </section>
+
+  <!-- ─────────────────────────── NOW ─────────────────────────── -->
+  <section class="band" id="now" aria-labelledby="now-h">
+    <h2 class="section-label" id="now-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>Now</h2>
+
+    <dl class="now-grid reveal">
+      <!-- [EDIT] Three lines, hand-updated. Vague entries kill the whole point. -->
+      <div class="now-item">
+        <dt class="now-key">Building</dt>
+        <dd class="now-val">ReEnvision — AI literacy for students who aren't taught it in school. 96 lessons, installable, works with no connection.</dd>
+      </div>
+      <div class="now-item">
+        <dt class="now-key">Stack</dt>
+        <dd class="now-val">TypeScript, React 19, TanStack Start, Cloudflare Workers, Supabase, Postgres. Whatever gets it in front of someone fastest.</dd>
+      </div>
+      <div class="now-item">
+        <dt class="now-key">Looking for</dt>
+        <dd class="now-val">A cofounder, or an early team where I'd own product and code. Also taking full-stack contract work.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ─────────────────────────── WORK ─────────────────────────── -->
+  <section class="band" id="work" aria-labelledby="work-h">
+    <h2 class="section-label" id="work-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>What I've shipped</h2>
+
+    <ul class="work-list">
+      <!-- [EDIT] Duplicate an <li> per project. Three or four is plenty;
+           six is a portfolio nobody finishes. Lead with what it does. -->
+      <li class="work-item reveal">
+        <a class="work-link" href="https://github.com/robertpierson/reenvision-app-curriculum-pages">
+          <span class="work-year">2026</span>
+          <h3 class="work-title"><span class="reg reg-sm" data-text="ReEnvision">ReEnvision</span></h3>
+          <p class="work-what">AI literacy for students whose schools don't teach it. Four courses, 32 units, 96 lessons. I wrote the curriculum and built the app: it installs to a phone and keeps working with no connection, because the students who need it most are the ones without reliable wifi.</p>
+          <p class="work-meta"><span class="tag">Nonprofit</span><span class="tag">Curriculum and code</span><span class="tag">Offline-first PWA</span></p>
+        </a>
+      </li>
+
+      <li class="work-item reveal">
+        <a class="work-link" href="https://resume-bullets.higgsfield.app">
+          <span class="work-year">2026</span>
+          <h3 class="work-title"><span class="reg reg-sm" data-text="Resume Bullets">Resume Bullets</span></h3>
+          <p class="work-what">Paste in a resume, get back one page that reads like a person wrote it. I built it, priced it, and run it. The whole product is a Cloudflare Worker, and the service key never leaves Supabase because lead writes go through an Edge Function.</p>
+          <p class="work-meta"><span class="tag">Solo, shipped</span><span class="tag">React 19</span><span class="tag">TanStack Start</span><span class="tag">Cloudflare + Supabase</span></p>
+        </a>
+      </li>
+
+      <li class="work-item reveal">
+        <a class="work-link" href="https://github.com/robertpierson/jim">
+          <span class="work-year">2026</span>
+          <h3 class="work-title"><span class="reg reg-sm" data-text="Jim">Jim</span></h3>
+          <p class="work-what">Lift and body-metric tracking with a leaderboard for your friend group. Built on the bet that the honest reason anyone logs a set is so someone else sees it — the leaderboard is the product, the tracker is the excuse.</p>
+          <p class="work-meta"><span class="tag">Side project</span><span class="tag">Full-stack</span><span class="tag">Postgres</span></p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ─────────────────────────── WRITING ─────────────────────────── -->
+  <section class="band" id="more" aria-labelledby="more-h">
+    <h2 class="section-label" id="more-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>Also shipped</h2>
+
+    <ul class="post-list reveal">
+      <!-- [EDIT] The smaller stuff. Volume is a signal too — but keep it public and real.
+           If you start writing, this same list works for posts: swap the links. -->
+      <li class="post"><a href="https://github.com/robertpierson/reenvision-app-curriculum-pages">
+        <span class="post-date">2026</span>
+        <span class="post-title">ReEnvision curriculum pages</span>
+        <span class="post-dek">96 lessons as self-contained HTML. No build step, so a teacher can open one file and it just works.</span>
+      </a></li>
+      <li class="post"><a href="https://github.com/robertpierson/Personal-PWA">
+        <span class="post-date">2026</span>
+        <span class="post-title">Personal PWA</span>
+        <span class="post-dek">A pocket dashboard for the things I check daily, installed to the home screen instead of a tab.</span>
+      </a></li>
+      <li class="post"><a href="https://github.com/robertpierson/click-speed-test">
+        <span class="post-date">2026</span>
+        <span class="post-title">Click speed test</span>
+        <span class="post-dek">Small, fast, and finished in an evening. Every portfolio needs one of these.</span>
+      </a></li>
+    </ul>
+  </section>
+
+  <!-- ─────────────────────────── ABOUT ─────────────────────────── -->
+  <section class="band" id="about" aria-labelledby="about-h">
+    <h2 class="section-label" id="about-h"><svg class="regmark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><path d="M12 1v22M1 12h22"/></svg>About</h2>
+
+    <div class="about-grid">
+      <div class="about-prose reveal">
+        <!-- [EDIT] Two or three short paragraphs. Write like you'd explain it to a
+             friend. Replace anything below that isn't true of you — it's a shape to
+             fill, not a bio. -->
+        <p>I'm the technical one and the one who runs it. Full-stack means I write
+        the frontend, the API, and the schema — but the part I actually like is
+        everything after that: what to charge, who it's for, why the person who
+        signed up on Tuesday never came back.</p>
+
+        <p>My bias is toward fewer moving parts and shipping to a real person early.
+        A lot of what I build has no build step at all — open the file and it works
+        — because the things that survive are the ones anyone can pick up without a
+        manual. I'd rather have three finished products than ten repositories.</p>
+
+        <p>The one I care most about is ReEnvision. Turning 96 lessons into something
+        a teacher can actually run, on a phone, with no connection, turned out to be
+        the real work. The code was the cheap part. That's been true of every project
+        on this page, and it's most of why I want to do this full time.</p>
+      </div>
+
+      <dl class="about-facts reveal">
+        <!-- [EDIT] your links. Delete any row you don't have — an empty one costs trust. -->
+        <dt>Email</dt><dd><a href="mailto:robertpierson196@gmail.com">robertpierson196@gmail.com</a></dd>
+        <dt>Code</dt><dd><a href="https://github.com/robertpierson" rel="me noopener">github.com/robertpierson</a></dd>
+        <dt>Elsewhere</dt><dd><a href="https://www.linkedin.com/" rel="me noopener">Add your LinkedIn</a></dd>
+        <dt>Résumé</dt><dd><a href="#">One page, PDF</a></dd>
+        <dt>Available</dt><dd>Cofounder, full-time, or contract</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CONTACT ─────────────────────────── -->
+  <section class="contact" aria-labelledby="contact-h">
+    <h2 class="contact-h" id="contact-h">Say hello</h2>
+    <p class="contact-sub">Building something early, or need someone who'll own the whole stack? Tell me what you're working on. I answer everything within a day or two.</p>
+    <a class="contact-mail" href="mailto:robertpierson196@gmail.com">
+      <span class="reg reg-mail" data-text="robertpierson196@gmail.com">robertpierson196@gmail.com</span>
+    </a>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <p>Set in Bricolage Grotesque and Newsreader. A two-colour press: green ink on cream stock with white inserts, run slightly out of register on purpose.</p>
+  <p>Hand-written HTML. No trackers, no cookies, no build step. <span class="colophon-year">© 2026 Robert Pierson</span></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
