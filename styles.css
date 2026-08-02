@@ -499,6 +499,9 @@ main { min-width: 0; }
 }
 .entry[hidden] { display: none; }
 
+/* an entry with no confirmed date drops the date column rather than faking one */
+.entry-undated { grid-template-columns: minmax(0, 1fr) auto; }
+
 .entry-date {
   padding-top: .2rem;
   color: var(--ink-muted);
