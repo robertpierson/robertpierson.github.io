@@ -36,6 +36,20 @@ and the filter appears.
 Keep entries newest-first. `entry-detail` is optional; drop the tag if there's
 nothing worth adding.
 
+If you don't have a confirmed date, add `entry-undated` and drop the date span
+entirely rather than guessing one — the row drops the date column and stays
+aligned:
+
+```html
+<li class="entry entry-undated" data-type="certification">
+  <div class="entry-body">
+    <h3 class="entry-title">Fundamentals of Digital Marketing</h3>
+    <p class="entry-issuer">Google Digital Garage</p>
+  </div>
+  <span class="entry-type">Certification</span>
+</li>
+```
+
 ## Everything else worth editing
 
 All in `index.html`, top to bottom:
