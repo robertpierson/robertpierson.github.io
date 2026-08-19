@@ -1,33 +1,5 @@
-// Three small behaviours: the stock toggle, the rail's scroll position, and
-// the record filter. The initial theme is resolved by the inline script in
-// <head> so the page never flashes the wrong stock.
-
-/* ── Cream / forest stock ─────────────────────────────────────────────── */
-
-const root = document.documentElement;
-const toggle = document.querySelector("[data-theme-toggle]");
-const themeColor = document.querySelector('meta[name="theme-color"]');
-const STOCK = { cream: "#F7F4ED", forest: "#0B1F15" };
-
-function paint(theme) {
-  root.dataset.theme = theme;
-  themeColor.content = STOCK[theme];
-  toggle.setAttribute("aria-pressed", String(theme === "forest"));
-  toggle.querySelector(".stock-label").textContent = theme === "forest" ? "Cream" : "Forest";
-  toggle.setAttribute("aria-label", theme === "forest" ? "Switch to cream" : "Switch to forest");
-}
-
-paint(root.dataset.theme);
-
-toggle.addEventListener("click", () => {
-  const next = root.dataset.theme === "forest" ? "cream" : "forest";
-  localStorage.setItem("stock", next);
-  paint(next);
-});
-
-matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-  if (!localStorage.getItem("stock")) paint(e.matches ? "forest" : "cream");
-});
+// Two behaviours: the rail's scroll position, and the record filter.
+// The theme toggle is gone — the site is one press now.
 
 /* ── Rail: mark the section you're reading ────────────────────────────── */
 
@@ -39,7 +11,7 @@ const spied = spyLinks
 if (spied.length) {
   // The last section whose top has crossed a line a third of the way down the
   // viewport is the one you're reading. An observer band was tried first and
-  // left short sections — the last one especially — never lighting up at all.
+  // left short sections — the last one especially — never lighting up.
   const LINE = 0.33;
 
   const mark = () => {
@@ -80,13 +52,13 @@ if (spied.length) {
 const record = document.querySelector("[data-record]");
 const filterBar = document.querySelector("[data-filters]");
 
-// Display order and plural label for each type. Anything not listed still
-// works — it just sorts last under a capitalised version of its own name.
+// Display order and plural label per type. Anything not listed still works —
+// it just sorts last under a capitalised version of its own name.
 const TYPES = [
-  ["research", "Research"],
+  ["leadership", "Leadership"],
   ["certification", "Certifications"],
   ["honor", "Honors"],
-  ["leadership", "Leadership"],
+  ["research", "Research"],
 ];
 
 if (record && filterBar) {
@@ -97,7 +69,8 @@ if (record && filterBar) {
     TYPES.find(([t]) => t === type)?.[1] ?? type.charAt(0).toUpperCase() + type.slice(1);
 
   const order = [...present].sort(
-    (a, b) => (TYPES.findIndex(([t]) => t === a) + 1 || 99) - (TYPES.findIndex(([t]) => t === b) + 1 || 99)
+    (a, b) =>
+      (TYPES.findIndex(([t]) => t === a) + 1 || 99) - (TYPES.findIndex(([t]) => t === b) + 1 || 99)
   );
 
   // One category isn't a filter, it's just a list.
